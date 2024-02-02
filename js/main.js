@@ -5,7 +5,7 @@ var score = document.getElementById("score");
 
 async function fetchData(){
     try{
-        const response = await fetch("../data.json");
+        const response = await fetch("data.json");
         return await response.json();
     } catch (error){
         console.error(error);
