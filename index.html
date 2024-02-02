@@ -2,19 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Frontend Mentor | Results summary component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
-  <link rel="stylesheet" href="dist/output.css">
-  <!-- Debugging process -->
-  <style>
-    *{
-      border: 1px solid red;
-    }
-  </style>
+  <link rel="stylesheet" href="output.css">
 </head>
 
+<body class="min-h-screen bg-very-light-blue">
+  <div class="bg-very-light-blue sm:w-screen sm:h-screen sm:flex sm:flex-col sm:items-center sm:justify-center">
+    <div class="bg-white flex flex-col h-screen sm:w-fit sm:h-fit sm:flex-row sm:rounded-2xl">
+      <!-- Header or Left Side -->
+      <header class="bg-gradient-to-b from-g1a to-g1b rounded-b-2xl p-7 flex flex-col gap-5 justify-items-center  content-center items-center sm:rounded-2xl sm:px-14">
+        <div class="text-light-blue text-lg font-bold">Your Result</div>
+        <div class="bg-gradient-to-b from-g2a to-g2b py-6 px-8 rounded-full sm:py-8 sm:px-10">
+          <p class="text-white text-5xl font-bold sm:text-7xl" id="score"></p>
+          <p class="text-light-blue text-base text-center font-bold">of 100</p>
+        </div>
+        <p class="text-white text-2xl font-bold">Great</p>
+        <p class="text-light-blue text-base text-center font-medium max-w-sm sm:max-w-56">Your performance exceed 65% of the people conducting the test here</p>
+      </header>
 
-<body>
+      <!-- Summary or Right Side -->
+      <main class="bg-white p-4 space-y-5 sm:rounded-2xl">
+        <div class="text-dark-navy text-lg font-bold">Summary</div>
+        <!-- Summary Cell -->
+        <div class="bg-red bg-opacity-5 rounded-xl flex justify-between items-center p-2 sm:gap-20">
+          <!-- Reaction Info -->
+          <div class="summary-group flex items-center gap-x-3">
+            <div class="summary-group-icon"></div>
+            <div class="summary-group-name text-red font-medium"></div>
+          </div>
+          <!-- Reaction Score -->
+          <div class="summary-score">
+          </div>
+        </div>
+        <!-- Summary Cell -->
+        <div class="bg-yellow bg-opacity-5 rounded-xl flex justify-between items-center p-2">
+          <!-- Memory Group Info -->
+          <div class="summary-group flex items-center gap-x-3">
+            <div class="summary-group-icon"></div>
+            <div class="summary-group-name"></div>
+          </div>
+          <!-- Memory Score -->
+          <div class="summary-score">
+          </div>
+        </div><!-- Summary Cell -->
+        <div class="bg-green bg-opacity-5 rounded-xl flex justify-between items-center p-2">
+          <!-- Verbal Group Info -->
+          <div class="summary-group flex items-center gap-x-3">
+            <div class="summary-group-icon"></div>
+            <div class="summary-group-name"></div>
+          </div>
+          <!-- Verbal Score -->
+          <div class="summary-score">
+          </div>
+        </div><!-- Summary Cell -->
+        <div class="bg-blue bg-opacity-5 rounded-xl flex justify-between items-center p-2">
+          <!-- Visual Group Info -->
+          <div class="summary-group flex items-center gap-x-3">
+            <div class="summary-group-icon"></div>
+            <div class="summary-group-name"></div>
+          </div>
+          <!-- Visual Score -->
+          <div class="summary-score">
+          </div>
+        </div>
+        <button class="bg-dark-navy text-white text-lg font-bold p-2 rounded-3xl w-full hover:bg-gradient-to-b from-g1a to-g1b">Continue</button>
+      </main>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
 </body>
 </html>
